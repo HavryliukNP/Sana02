@@ -16,15 +16,16 @@ double D, x1, x2;
 D = Math.Pow(b, 2) - 4 * a * c;
 Console.WriteLine($"D = {D}");
 
-if (D == 0) 
-{ 
+if (D == 0)
+{
     x1 = -b / (2 * a);
     Console.WriteLine($"x = {x1}");
 }
 else if (D > 0)
 {
-    x1 = (-b + Math.Sqrt(D))/ (2 * a);
+    x1 = (-b + Math.Sqrt(D)) / (2 * a);
     Console.WriteLine($"x1 = {x1}");
     x2 = (-b - Math.Sqrt(D)) / (2 * a);
     Console.WriteLine($"x2 = {x2}");
-}else Console.WriteLine("Розв’язків немає");
+}
+else Console.WriteLine("Розв’язків немає");

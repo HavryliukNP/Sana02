@@ -6,23 +6,23 @@ Console.OutputEncoding = Encoding.Unicode;
 static void sum1 (double n)
 {
     double a = 0;
-    for (int i = 0; i < n; i++)
-        a += Math.Pow(-1, n) / (2 * n + 1);
+    for (int i = 1; i <= n; i++)
+        a += Math.Pow(-1, i) / (2 * i + 1);
     Console.WriteLine($"a = {a}");
 }
 
 static void sum2(double n)
 {
     double b = 0;
-    for (int i = 0; i < n; i++)
-        b += 1 + (1 / Math.Pow(n, 2));
+    for (int i = 1; i <= n; i++)
+        b += 1 + 1.0 / (i * i);
     Console.WriteLine($"b = {b}");
 }
 
 static void sum3(double n)
 {
-    double sum = 0;
-    double dob = 1;
+    int sum = 0;
+    int dob = 1;
     for(int j = 1; j <= n; j++) { 
         dob *= j;
         sum += dob;
